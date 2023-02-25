@@ -4,7 +4,18 @@
 
     ```jsx
     // Your ES6 code here
-    
+    const isEligibleToVote = (age) => 
+    {
+    if (age >= 18) 
+        {
+        return true;
+        } else 
+        {
+        return false;
+        }
+    };
+
+
     console.log(isEligibleToVote(20)) // Eligible to vote
     console.log(isEligibleToVote(18)) // Eligible to vote
     console.log(isEligibleToVote(17)) // Not eligible to vote
@@ -14,15 +25,51 @@
 
     ```jsx
     // Your ES6 code here
+    const isGreater = (num1,num2) => { if(num1 > num2)
+        {
+        console.log(`The ${num1} is greater ${num2}`)
+        return num1;
+        }else
+            {
+            console.log(`The ${num2} is greater ${num1}`)
+            return num2;
+            }}
     
     console.log(isGreater(2, 5)) // 5 is greater than 2
     console.log(isGreater(10, 5)) // 10 is greater than 5
+
+
+    //ES5 code 
+    function isGreater(num1,num2)
+    {
+    if(num1 > num2)
+        {
+        console.log(`The ${num1} is greater ${num2}`)
+        }else
+            {
+            console.log(`The ${num2} is greater ${num1}`)
+            }
+
+    console.log(isGreater(2, 5)) // 5 is greater than 2
+    console.log(isGreater(10, 5)) // 10 is greater than 5
+    }
+
     ```
 
 2. Write a function that takes a number as input and determines if it is positive or negative.
 
     ```jsx
     // Your ES6 code here
+    const checkNum = (num) => {
+        if (num > 0) {
+            return "positive";
+        } else if (num < 0) {
+            return "negative";
+        } else {
+            return "zero";
+        }
+        };
+
     
     console.log(checkNum(9)) // Positive Number
     console.log(checkNum(-8)) // Negative Number
@@ -33,7 +80,13 @@
 
     ```jsx
     // Your ES6 code here
-    
+    const isEvenOdd = (num) => {
+    if (num % 2 === 0) {
+        return "even";
+    } else {
+        return "odd";
+    }
+    };    
     console.log(isEvenOdd(5)) // Odd Number
     console.log(isEvenOdd(8)) // Even Number
     console.log(isEvenOdd(10)) // Even Number
@@ -43,26 +96,70 @@
 
     ```jsx
     // Your ES6 code here
+    const checkForAlphabetA = (str) => {
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === "a" || str[i] === "A") {
+        return "Includes a";
+        }
+    }
+    return "Does not include a";
+    };
+
     
     console.log(checkForAlphabetA("Tanay")) // Includes a 
     console.log(checkForAlphabetA("Jeep")) // Does not include a 
     console.log(checkForAlphabetA("Jane")) // Includes a 
+
+    //Your Es6 code without using string operation
+
+    const checkForAlphabetA = (str) => {
+    if (str.includes("a") || str.includes("A")) {
+        return "Includes a";
+    } else {
+        return "Does not include a";
+    }
+    };
+
     ```
 
 5. Write a function that takes a string as input and determines if it is longer than 5 characters.
 
     ```jsx
-    // Your ES6 code here
+    // Your ES6 code here with inbuilt string operation
+    const checkLength = (str) => {
+    if (str.length > 5) {
+        return "more than 5 characters";
+    } else {
+        return "less than or equal to 5 characters";
+    }
+    };
+
     
     console.log(checkLength("Programming")) // more than 5 characters 
     console.log(checkLength("Jeep")) // less than 5 characters 
+
+
+    // Your Es6 code here without using inbuilt function
+    const checkLength = (str) => {
+    let count = 0;
+    for (let char of str) {
+        count++;
+    }
+    if (count > 5) {
+        return "more than 5 characters";
+    } else {
+        return "less than or equal to 5 characters";
+    }
+    };
     ```
 
 6. Write a function that takes a number as input and determines if it is between 1 and 10.
 
     ```jsx
     // Your ES6 Code here
-    
+    const isBetweenOneAndTen = (num) => {
+    return num >= 1 && num <= 10;
+    };
     console.log(isBetweenOneAndTen(5)); // true
     console.log(isBetweenOneAndTen(11)); // false
     ```
@@ -71,15 +168,45 @@
 
     ```jsx
     // Your ES6 code here
+    const isHelloPresent = (str) => {
+    const searchStr = "hello";
+    let index = 0;
+    let found = false;
+
+    while (index <= str.length - searchStr.length) {
+        let i = 0;
+        while (i < searchStr.length && str[index + i] === searchStr[i]) {
+        i++;
+        }
+        if (i === searchStr.length) {
+        found = true;
+        break;
+        }
+        index++;
+    }
+
+    return found;
+    };
+
+
     
     console.log(isHelloPresent("Hello World")) // true
     console.log(isHelloPresent("World")) // false
-    ```
+
+    // ES6 code with using string operation
+    const isHelloPresent = (str) => {
+    return str.toLowerCase().includes("hello");
+    };
+
+ ```
 
 8. Write a function that takes a number as input and determines if it is a multiple of 3.
 
-    ```jsx
+```jsx
     // Your ES6 code here
+    const isMultipleOfThree = (num) => {
+     return num % 3 === 0;
+};
     
     console.log(isMultipleOfThree(5)); // false
     console.log(isMultipleOfThree(9)); // true
