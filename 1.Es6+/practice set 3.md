@@ -1,154 +1,169 @@
-# ES6+ Practice Question Set 1
+# ES6+ Practice Question Set 3
 
-1. Write a function that takes a user's age and determines if they are old enough to vote (age 18 or older).
+1. Create a function that takes an array of strings as an argument and returns a string that includes the number of items in the array and the first and last items.
+
+    ```jsx
+    
+    // Your ES6 code here
+    
+    const items = ['apple', 'banana', 'orange'];
+    const message = formatArray(items);
+    console.log(message);
+    // The array has 3 items, and the first item is "apple", and the last item is "orange".
+    ```
+
+2. Create a function that takes a product object as an argument and returns a string that includes the product name, price, and a message based on whether it is in stock or not.
 
     ```jsx
     // Your ES6 code here
     
-    console.log(isEligibleToVote(20)) // Eligible to vote
-    console.log(isEligibleToVote(18)) // Eligible to vote
-    console.log(isEligibleToVote(17)) // Not eligible to vote
-    ```
-
-1. Write a function that takes two numbers as input and determines which one is greater.
-
-    ```jsx
-    // Your ES6 code here
-    
-    console.log(isGreater(2, 5)) // 5 is greater than 2
-    console.log(isGreater(10, 5)) // 10 is greater than 5
-    ```
-
-2. Write a function that takes a number as input and determines if it is positive or negative.
-
-    ```jsx
-    // Your ES6 code here
-    
-    console.log(checkNum(9)) // Positive Number
-    console.log(checkNum(-8)) // Negative Number
-    console.log(checkNum(22)) // Positive Number
-    ```
-
-3. Write a function that takes a number as input and determines if it is even or odd.
-
-    ```jsx
-    // Your ES6 code here
-    
-    console.log(isEvenOdd(5)) // Odd Number
-    console.log(isEvenOdd(8)) // Even Number
-    console.log(isEvenOdd(10)) // Even Number
-    ```
-
-4. Write a function that takes a string as input and determines if it contains the letter 'a' or ‘A’.
-
-    ```jsx
-    // Your ES6 code here
-    
-    console.log(checkForAlphabetA("Tanay")) // Includes a 
-    console.log(checkForAlphabetA("Jeep")) // Does not include a 
-    console.log(checkForAlphabetA("Jane")) // Includes a 
-    ```
-
-5. Write a function that takes a string as input and determines if it is longer than 5 characters.
-
-    ```jsx
-    // Your ES6 code here
-    
-    console.log(checkLength("Programming")) // more than 5 characters 
-    console.log(checkLength("Jeep")) // less than 5 characters 
-    ```
-
-6. Write a function that takes a number as input and determines if it is between 1 and 10.
-
-    ```jsx
-    // Your ES6 Code here
-    
-    console.log(isBetweenOneAndTen(5)); // true
-    console.log(isBetweenOneAndTen(11)); // false
-    ```
-
-7. Write a function that takes a string as input and determines if it contains the word "hello".
-
-    ```jsx
-    // Your ES6 code here
-    
-    console.log(isHelloPresent("Hello World")) // true
-    console.log(isHelloPresent("World")) // false
-    ```
-
-8. Write a function that takes a number as input and determines if it is a multiple of 3.
-
-    ```jsx
-    // Your ES6 code here
-    
-    console.log(isMultipleOfThree(5)); // false
-    console.log(isMultipleOfThree(9)); // true
-    ```
-
-9. Write a function which takes in a number as input and returns it after multiplying by 10.
-
-    ```jsx
-    // Your ES6 code here
-    
-    console.log(multiplyByTen(20)) // 200
-    console.log(multiplyByTen(40)) // 400
-    ```
-
-10. Console individual values of the product object using object destructuring.
-
-    ```jsx
     const product = {
-      title: "iPhone",
-      price: 5999,
-      description: "The iPhone is a smartphone developed by Apple"
+      name: 'Socks',
+      price: 249,
+      inStock: true,
+    };
+    
+    const message = formatProduct(product);
+    console.log(message);
+    // Socks costs INR 249 and is in stock.
+    ```
+
+3. Write a function findPerson that takes an array of person objects and a name as parameters and returns the object with the matching name, or null if not found.
+
+    ```jsx
+    // Your ES6 code here
+    
+    console.log(findPerson([{ name: 'Amay', age: 25 }, { name: 'Akhil', age: 25 }], "Akhil"))
+    ```
+
+4. Write a function that uses destructuring to extract the first two elements from an array, and returns them in an object with keys 'first' and 'second'.
+
+    ```jsx
+    // Your ES6 code here
+    
+    console.log(pickFirstAndSecond(["orange", "banana", "apple"]))
+    // {first: 'orange', second: 'banana'}
+    
+    console.log(pickFirstAndSecond(["red", "blue", "green"]))
+    // {first: 'red', second: 'blue'}
+    ```
+
+5. Convert the following code to ES6+ syntax with minimum number of characters.
+
+    ```jsx
+    function startsWithA(str) {
+      if(str.charAt(0) === 'A') {
+      return true;
+     } else {
+      return false
+     }
     }
     
-    // Your ES6 code here
-    
-    console.log(title); // iPhone
-    console.log(price); // 5999
-    console.log(description); // The iPhone is a smartphone developed by Apple
+    console.log(startsWithA("Akshita"))
+    // true
+    console.log(startsWithA("Jeena"))
+    // false
     ```
 
-1. Create an object book with properties title, author, and pages. Create a function getBookDetails that takes a book object as a parameter and returns if the book has more than 100 pages.
+6. Write an ES6 function to return only the first character of the given array.
 
     ```jsx
     // Your ES6 code here
     
-    console.log(getBookDetails(book)) // logs 'true' if the pages are above 100
-    console.log(getBookDetails(book)) // logs 'false' if the pages are 100 or below
+    console.log(printFirstCharacter([1, 2, 3, 5, 8]))
+    // 1
     ```
 
-2. Create a function changeOccupation that takes an object person and a string newOccupation as parameters, and changes the occupation property of the person object to the newOccupation. Log the person object to the console before and after calling the function.
+7. Write a function to return the last 5 characters as an array from the given array.
 
     ```jsx
     // Your ES6 code here
     
-    console.log(person); // logs { name: 'Amit', age: 25, occupation: 'Software Engineer' } to the console
-    changeOccupation(person, 'Product Manager');
-    console.log(person); // logs { name: 'Amit', age: 25, occupation: 'Product Manager' } to the console
+    console.log(printLastFive([0, 1, 1, 2, 3, 5, 8]))
+    // [1, 2, 3, 5, 8]
     ```
 
-3. Given an array numbers containing the numbers 1, 2, and 3. Use array destructuring to log each number to the console.
+8. Write an ES6 function to return the second element of the given array by multiplying 20 to it.
 
     ```jsx
-    const numbers = [1, 2, 3];
     // Your ES6 code here
     
-    console.log(a); // logs 1 to the console
-    console.log(b); // logs 2 to the console
-    console.log(c); // logs 3 to the console
+    console.log(printSecondCharacter([1, 2, 3, 5, 8]))
+    // 40
     ```
 
-4. Convert the given function into ES6 with least amount of characters.
+9. Write an ES6 function to return the second element of the given array by adding “Hello” before it.
 
     ```jsx
-     function defaultParamsFunc(a, b, c) {
-        if (c === undefined) {
-            c = 4;
-        }
-        return a * b * c;
-     };
-     console.log(defaultParamsFunc(3, 1)); // 12
-     console.log(defaultParamsFunc(3, 10)); // 120
+    // Your ES6 code here
+    
+    console.log(sayHello(["Akshay", "Sweta", "Prerana", "Vinay"]))
+    // Hello Sweta
+    
+    console.log(sayHello(["Kanika", "Rakesh", "Prerana", "Puja"]))
+    // Hello Rakesh
     ```
+
+10. Write an ES6 function to return sum of all numbers at even indices of the given array.
+
+    ```jsx
+    // Your ES6 code here
+    
+    console.log(sumOfEvenIndices([2, 4, 3, 7, 1, 5])) // 6
+    console.log(sumOfEvenIndices([12, 14, 3, 27, 15, 25])) // 30
+    ```
+
+11. Write an ES6 function to return the sum of only first 2 elements of the array .
+
+    ```jsx
+    // Your ES6 code here
+    
+    console.log(sumFirstTwoElements([10, 4, 3, 7, 1, 5])) // 14
+    console.log(sumFirstTwoElements([12, 14, 3, 27, 15])) // 26
+    ```
+
+12. Write an ES6 function to return the first element which is a multiple of 5 in the given array.
+
+    ```jsx
+    // Your ES6 code here
+    
+    console.log(printMultipleOfFive([7, 4, 10, 7, 5, 3])) // 10
+    console.log(printMultipleOfFive([7, 5, 10, 7, 15, 3])) // 5
+    ```
+
+13. Create a function which takes in the given object and returns another object only with the properties postalCode and city in it.
+
+    ```jsx
+    // Your ES6 code here
+    
+    const userData = {
+      name: 'Jane Doy',
+      postalCode: '12134',
+      city: 'Germany',
+    }
+    
+    console.log(getAddress(userData));
+    // {postalCode: '12134', city: 'Germany'}
+    ```
+
+14. Create a function which takes in the given object and returns a sentence which indicates name of the person and where the person lives.
+
+    ```jsx
+    // Your ES6 code here
+    
+    const userData1 = {
+      name: 'Gaurav',
+      postalCode: '12134',
+      country: 'Japan',
+    }
+    console.log(printData(userData1)); // Gaurav lives in Japan
+    
+    const userData2 = {
+      name: 'Pritam',
+      postalCode: '560223',
+      country: 'India',
+    }
+    console.log(printData(userData2)); // Pritam lives in India
+    ```
+
+15. Create a function which takes a product object and returns a sentence about the product using ES6 features.
