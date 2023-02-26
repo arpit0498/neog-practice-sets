@@ -187,29 +187,26 @@
 
     return found;
     };
-
-
-    
     console.log(isHelloPresent("Hello World")) // true
     console.log(isHelloPresent("World")) // false
 
     // ES6 code with using string operation
     const isHelloPresent = (str) => {
     return str.toLowerCase().includes("hello");
-    };
-
- ```
+    }
+    ```
 
 8. Write a function that takes a number as input and determines if it is a multiple of 3.
 
-```jsx
-    // Your ES6 code here
+    ```js
+     // Your ES6 code here
+
     const isMultipleOfThree = (num) => {
      return num % 3 === 0;
-};
+    };
     
     console.log(isMultipleOfThree(5)); // false
-    console.log(isMultipleOfThree(9)); // true
+    console.log(isMultipleOfThree(9)); // true   
     ```
 
 9. Write a function which takes in a number as input and returns it after multiplying by 10.
@@ -217,8 +214,13 @@
     ```jsx
     // Your ES6 code here
     
+    const multiplyByTen = (num) => {
+    return num * 10;
+    }
+
     console.log(multiplyByTen(20)) // 200
     console.log(multiplyByTen(40)) // 400
+
     ```
 
 10. Console individual values of the product object using object destructuring.
@@ -231,6 +233,8 @@
     }
     
     // Your ES6 code here
+    const { title, price, description } = product;
+
     
     console.log(title); // iPhone
     console.log(price); // 5999
@@ -241,6 +245,16 @@
 
     ```jsx
     // Your ES6 code here
+    const book={
+        title: "Think like a Monk",
+        author:"Jay shetty",
+        pages:"316"
+    }
+
+    const getBookDetails=(book) => {
+        return book.pages > 100;
+    }
+
     
     console.log(getBookDetails(book)) // logs 'true' if the pages are above 100
     console.log(getBookDetails(book)) // logs 'false' if the pages are 100 or below
@@ -250,6 +264,18 @@
 
     ```jsx
     // Your ES6 code here
+   
+    // create the person object
+    const person = {
+    name: 'Amit',
+    age: 25,
+    occupation: 'Software Engineer'
+    };
+
+    // define the changeOccupation function
+    const changeOccupation = (person, newOccupation) => {
+    person.occupation = newOccupation;
+    };
     
     console.log(person); // logs { name: 'Amit', age: 25, occupation: 'Software Engineer' } to the console
     changeOccupation(person, 'Product Manager');
@@ -261,6 +287,7 @@
     ```jsx
     const numbers = [1, 2, 3];
     // Your ES6 code here
+    const[a,b,c]=numbers;
     
     console.log(a); // logs 1 to the console
     console.log(b); // logs 2 to the console
@@ -279,3 +306,21 @@
      console.log(defaultParamsFunc(3, 1)); // 12
      console.log(defaultParamsFunc(3, 10)); // 120
     ```
+Solution:
+
+```jsx
+
+    const defaultParamsFunc = (a, b, c = 4) => a * b * c; //by hard-code the value so later on it automatically gets updated when we are consoling if we put the different value of c
+
+    console.log(defaultParamsFunc(3, 1)); // 12
+    console.log(defaultParamsFunc(3, 10)); // 120
+
+```
+Another way 
+
+```js
+
+const defaultParamsFunc = (a, b, c) => a * b * (c === undefined ? 4 : c);
+    console.log(defaultParamsFunc(3, 1,5)); // 15
+    console.log(defaultParamsFunc(3, 10, 20)); // 600
+```
