@@ -4,7 +4,12 @@
 
     ```jsx
     // Your code here
-    
+    const person = {
+    name: "Arpit",
+    age: 30
+    };
+
+    person.age =35;
     console.log(person.age); // Output: 35
     ```
 
@@ -12,6 +17,9 @@
 
     ```jsx
     //Your ES6 code here
+    const isSportsCar = (car) => {
+    return car.horsepower >= 300;
+    }
     
     const car1 = { make: 'Porsche', model: '911', horsepower: 450 };
     const car2 = { make: 'Toyota', model: 'Camry', horsepower: 200 };
@@ -23,8 +31,11 @@
 
     ```jsx
     // Your ES6 code here
-    
+    const isEligible = (person, num) => {
+    return (person.age + num) > 21;
+    };
     const person1 = { name: 'Ajay', age: 20 };
+
     console.log(isEligible(person1, 1)); // false
     console.log(isEligible(person1, 2)); // true
     ```
@@ -34,9 +45,14 @@
     ```jsx
     
     // Your ES6 code here
+    const getViews = (blog) => {
+      return blog.views > 1000;
+    }
+
     
     const blog1 = {title: 'How to Learn JavaScript', author: 'John Doe', views: 1430};
     const blog2 = {title: '10 Reasons to Start a Blog', author: 'Jane Smith', views: 500};
+
     console.log(getViews(blog1)); // true
     console.log(getViews(blog2)); // false
     ```
@@ -47,7 +63,7 @@
     let a = 1;
     let b = 2;
     // Your ES6 Code here
-    
+    [a, b] = [b, a];
     console.log(a) // 2
     console.log(b) // 1
     ```
@@ -62,10 +78,19 @@
     console.log(add(2, 3));
     ```
 
+    solution:
+
+    ```jsx
+    const add = (a = 30, b = 0) => a + b;
+    console.log(add(2, 3)); // 5
+    ```
+
+
 7. Write an ES6 function combineObjects with least amount of characters which merges two objects into one.
 
     ```jsx
     // Your ES6 function here
+    const combineObjects = (obj1, obj2) => ({ ...obj1, ...obj2 });
     
     const obj1 = {a: 1, b: 2};
     const obj2 = {c: 3, d: 4};
@@ -95,12 +120,43 @@
     };
     getData(person);
     ```
+    solution 
+
+    ```jsx
+    const getData = ({name, address: {city}}) => {
+    console.log(name);
+    console.log(city);
+    };
+
+    const person = {
+    name: 'John Doe',
+    address: {
+        city: 'New York',
+        state: 'NY',
+    },
+    };
+
+    getData(person);
+    ```
 
 9. Write a function that takes a string as input and returns the string in all uppercase letters.
 
     ```jsx
     // Youe ES6 code here
-    
+    const stringToUpperCase = (str) => {
+    const uppercase = { a: 'A', b: 'B', c: 'C', d: 'D', e: 'E', f: 'F', g: 'G', h: 'H', i: 'I', j: 'J', k: 'K', l: 'L', m: 'M', n: 'N', o: 'O', p: 'P', q: 'Q', r: 'R', s: 'S', t: 'T', u: 'U', v: 'V', w: 'W', x: 'X', y: 'Y', z: 'Z' };
+
+    let result = '';
+
+    for (let i = 0; i < str.length; i++) {
+    const lowercaseChar = str[i];
+    const uppercaseChar = uppercase[lowercaseChar]|| lowercaseChar;
+    result += uppercaseChar ;
+    }
+
+     return result;
+    }
+
     console.log(stringToUpperCase("hello")); // "HELLO"
     ```
 
