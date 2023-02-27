@@ -164,7 +164,10 @@
 
     ```jsx
     // Your ES6 code here
-    
+    const concatenateStrings = (string1, string2) => {
+
+    return string1 + string2;
+    };
     console.log(concatenateStrings("hello", "world")); // "helloworld"
     ```
 
@@ -172,15 +175,34 @@
 
     ```jsx
     // Your ES6 code here
+    const lastElement = (arr) => {
+
+     return arr[arr.length - 1];
+    };
+    console.log(lastElement([1, 2, 3, 4, 5])); // 5
     
+    //Code without length function
+    const lastElement = (arr) => {
+
+    let lastIndex = 0;
+    while (arr[lastIndex + 1] !== undefined) {
+    lastIndex++;
+    }
+    return arr[lastIndex];
+    };
+
     console.log(lastElement([1, 2, 3, 4, 5])); // 5
     ```
+
+
 
 12. Write a function that takes an array and returns the first element of the array.
 
     ```jsx
     // Your ES6 code here
-    
+    const firstElement = (arr) => {
+     return arr[0];
+    };
     console.log(firstElement([1, 2, 3, 4, 5])); // 1
     ```
 
@@ -188,7 +210,9 @@
 
     ```jsx
     // Your ES6 code here
-    
+    const sumFirstElement = (arr, num) => {
+    return arr[0] + num;
+    };
     console.log(sumFirstElement([1, 2, 3], 5)); // 6
     ```
 
@@ -196,8 +220,22 @@
 
     ```jsx
     // Your ES6 code here
+    const sumFirstAndLast = (arr) => {
+    return arr[0] + arr[arr.length - 1];
+    };
     
     console.log(sumFirstAndLast([1, 2, 3, 4, 8])); // 9
     ```
 
 15. Write a function that takes an object representing a person's information (name, age, occupation) and returns a template literal that includes the person's name and age in a sentence.
+
+    ```jsx
+    const personInfo = ({ name, age, occupation }) => {
+    return `My name is ${name} and I am ${age} years old. I work as a ${occupation}.`;
+    };
+
+    const person = { name: "John Doe", age: 30, occupation: "software engineer" };
+    console.log(personInfo(person)); // "My name is John Doe and I am 30 years old. I work as a software engineer."
+
+
+```
