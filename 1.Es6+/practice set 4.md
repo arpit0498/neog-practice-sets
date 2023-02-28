@@ -6,7 +6,17 @@
 
     ```jsx
     // Your ES6 code here
-    
+    const getMaxElement = (arr) => {
+
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+        max = arr[i];
+        }
+    }
+    return max;
+    };
+
     let array = [4,78,8,3,6,0,12,34]
     console.log(getMaxElement(array)) // 78
     ```
@@ -15,7 +25,15 @@
 
     ```jsx
     // Your ES6 code here
-    
+    const calculateAverage = (arr) => {
+
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+    };
+
     console.log(calculateAverage([1, 2, 3, 4, 5])); // 3
     ```
 
@@ -23,6 +41,19 @@
 
     ```jsx
     // Your ES6 code here
+    const convertEvenToOdd = (arr) => {
+    const result = Array(arr.length);
+    for (let i = 0; i < arr.length; i++) {
+        const num = arr[i];
+        if (num % 2 === 0) {
+        result[i] = num + 1;
+        } else {
+        result[i] = num;
+        }
+    }
+    return result;
+    };
+
     
     var numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     console.log(convertEvenToOdd(numArr));
@@ -33,7 +64,20 @@
 
     ```jsx
     // Your ES6 code here
-    
+    const filterWords = (words) => {
+
+    let result = [];
+    let resultIndex = 0;
+    for (let i = 0; i < words.length; i++) {
+        const word = words[i];
+        if (word.length > 5) {
+        result[resultIndex] = word;
+        resultIndex++;
+        }
+    }
+    return result;
+    };
+
     var words = ["eat", "sleep", "code", "repeat", "neog", "community"];
     console.log(filterWords(words)) // ["repeat", "community"]
     ```
@@ -51,7 +95,16 @@
 
     ```jsx
     // Your ES6 code here
-    
+    const getValues = (arr, prop) => {
+    let values = [];
+    for (let i = 0; i < arr.length; i++) {
+        let obj = arr[i];
+        let value = obj[prop];
+        values[i] = value;
+    }
+    return values;
+    };
+
     console.log(
       getValues(
         [
@@ -78,11 +131,22 @@
 
     ```jsx
     // Your ES6 code here
+    function checkForTeam(student) {
+
+    // Check if the student has a `team` property
+    if (student.team === undefined) {
+       
+        student['team'] = 'A'; // If not, add a `team` property with the value 'A'
+    }
     
+    // Return the updated student object
+    return student;
+    }
+
     console.log(checkForTeam({firstName: 'Penn', lastName: 'Ma'}))
     // {firstName: 'Penn', lastName: 'Ma', team: A}
     
-    console.log(checkForTeam({firstName: 'John', lastName: 'Dee', team: B}))
+    console.log(checkForTeam({firstName: 'John', lastName: 'Dee', team:'B'}))
     // {firstName: 'John', lastName: 'Dee', team: B}
     
     console.log(checkForTeam({firstName: 'Priya', lastName: 'Raj'}))
@@ -106,11 +170,37 @@
     console.log(publisherName); // O'Reilly Media
     ```
 
+    solution
+    ```jsx
+    const book = { 
+      title: 'JavaScript: The Definitive Guide',  
+      authors: [{name: 'David Flanagan', age: 49 }, { name: 'Yukihiro Matsumoto', age: 57 }],  
+      publisher: {name: 'O\'Reilly Media', location: 'CA'}
+    };
+
+    const { title, authors: [{ name: author1 }, { name: author2 }], publisher: { name: publisherName } } = book;
+
+    
+    console.log(title); // JavaScript: The Definitive Guide
+    console.log(author1); // David Flanagan
+    console.log(author2); // Yukihiro Matsumoto
+    console.log(publisherName); // O'Reilly Media
+
+
+    ```
+
 5. Write an ES6 function that takes an array of objects and returns the sum of all ages.
 
     ```jsx
     // Your ES6 code here
-    
+    const sumOfAges = (array) => {
+
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i].age;
+    }
+    return sum;
+    };
     var array = [
      {
       name: "Jay",
