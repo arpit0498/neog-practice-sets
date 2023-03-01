@@ -86,7 +86,15 @@
 
     ```jsx
     // Your ES6 code here
+    const capitalizeWords = (arr) => {
+
+    // Use the map() method to iterate over the array and capitalize each string
+    const capitalizedArr = arr.map((str) => {
+        return str.toUpperCase();
+    });
     
+    return capitalizedArr;
+    };
     console.log(capitalizeWords(["eat", "sleep", "code", "repeat"]))
     // ["EAT", "SLEEP", "CODE", "REPEAT"]
     ```
