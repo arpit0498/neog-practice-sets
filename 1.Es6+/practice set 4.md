@@ -129,10 +129,28 @@
 
     ```jsx
     // Your ES6 code here
-    
+    const podAndTeamAllocation= ({ firstName, lastName}) => {
+        const teamID = 667543;
+        return {firstName: firstName, lastName:lastName, teamID: teamID}
+
+    }
     const userData = { firstName : "John", lastName: "Dee" }
     console.log(podAndTeamAllocation(userData))
     // {firstName: 'John', lastName: 'Dee', teamId: 667543}
+    ```
+    ```jsx
+    // Using random function 
+    const podAndTeamAllocation = (userData) => {
+    const teamId = Math.floor(Math.random() * 1000000); // Generate a random team ID
+    const userDetailsWithTeamId = { ...userData, teamId }; // Add the team ID to user details
+    return userDetailsWithTeamId;
+    };
+
+    const userData = { firstName : "John", lastName: "Dee" };
+    console.log(podAndTeamAllocation(userData));
+    // Output: {firstName: 'John', lastName: 'Dee', teamId: 897523} (random teamID)
+
+
     ```
 
 3. Write an ES6 function which checks if a student already has a team. If team is not given then add them to team “A” and return the object else do nothing and return the same object. Avoid using in-built methods.
