@@ -10,7 +10,10 @@
     
     ```jsx
     // Your ES6 function here
-    
+    const incrementNumbers = (numbers) => {
+    const incrementedNumbers = numbers.map((num) => num + 3);
+    return incrementedNumbers;
+    };
     const numbers = [1, 2, 3, 4, 5];
     console.log(incrementNumbers(numbers));
     // Output: [4, 5, 6, 7, 8]
@@ -20,7 +23,10 @@
     
     ```jsx
     // Your ES6 function here
-    
+    const capitalizeArray = (strings) => {
+    const capitalizeArray = strings.map((str) => str.toUpperCase());
+    return capitalizeArray;
+    };
     const myArray = ['apple', 'banana', 'cherry'];
     console.log(capitalizeArray(myArray));
     // Output: ["APPLE", "BANANA", "CHERRY"]
@@ -30,7 +36,12 @@
     
     ```jsx
     // Your ES6 function here
-    
+
+    const getAges = (people) => {
+    const ages = people.map((person) => person.age);
+    return ages;
+    };
+
     const people = [
       { name: 'Ankit', age: 25 },
       { name: 'Vinit', age: 24 },
@@ -44,7 +55,12 @@
     
     ```jsx
     // Your ES6 function here
-    
+    const getProductNamesInLowerCase = (products) => {
+    const productNamesInLowerCase = products.map((product) =>
+        product.name.toLowerCase()
+    );
+    return productNamesInLowerCase;
+    };
     const products = [
       { name: 'Lip Balm', stock: 100 },
       { name: 'PERFUME', stock: 400 },
