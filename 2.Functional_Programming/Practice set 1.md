@@ -74,7 +74,8 @@
     
     ```jsx
     // Your ES6 function here
-    
+    const getCityNames = (cities) => cities.map(city => city.name);
+
     const cities = [
       { name: 'New York', population: 8538000 },
       { name: 'Los Angeles', population: 3976000 },
@@ -90,7 +91,11 @@
     
     ```jsx
     // Your ES6 function here
-    
+    const filterLongStrings = (arr) => {
+
+    return arr.filter(str => str.length > 5);
+    }
+
     const fruits = ['apple', 'banana', 'cherry', 'watermelon', 'pineapple'];
     console.log(filterLongStrings(fruits)); 
     // Output: ["banana", "cherry", "watermelon", "pineapple"]
@@ -100,7 +105,11 @@
     
     ```jsx
     // Your ES6 code here
-    
+    const isDivisibleBy3and5 = (arr) => {
+
+    return arr.filter(num => num % 3 === 0 && num % 5 === 0);
+     }
+
     const numbers = [1, 2, 30, 4, 15];
     console.log(isDivisibleBy3and5(numbers));
     // Output: [30, 15]
@@ -110,7 +119,11 @@
     
     ```jsx
     // Your ES6 code here
-    
+    const filterByAge = (arr) => {
+
+    return arr.filter(obj => obj.age > 30);
+    }
+
     const people = [
       { name: 'Rahul', age: 25 },
       { name: 'Raj', age: 35 },
@@ -125,7 +138,11 @@
     
     ```jsx
     // Your ES6 code here
-    
+    const filterByScore = (arr) => {
+
+    return arr.filter(obj => obj.score > 80);
+   }
+
     const students = [
       { name: 'Aditya', score: 85 },
       { name: 'Bob', score: 75 },
@@ -140,7 +157,11 @@
     
     ```jsx
     // Your ES6 code here
-    
+    const filterByCityAndAge = (arr) => {
+
+      return arr.filter(obj => obj.city === 'Indore' && obj.age > 70);
+    }
+
     const people = [
       { name: 'Ridhima', age: 75, city: 'Indore' },
       { name: 'Akshay', age: 60, city: 'Delhi' },
@@ -156,7 +177,11 @@
     
     ```jsx
     // Your ES6 code here
-    
+    const filterByGenre = (arr, genre) => {
+
+      return arr.filter(book => book.genre === genre);
+    }
+
     const books = [
       {title: "The Hitchhiker's Guide to the Galaxy", author: "Douglas Adams", genre: "Science Fiction"},
       {title: "To Kill a Mockingbird", author: "Harper Lee", genre: "Fiction"},
@@ -173,7 +198,11 @@
     
     ```jsx
     // Your ES6 code here
-    
+    const filterBySalary = (arr, salaryThreshold, ageThreshold) => {
+
+      return arr.filter(employee => employee.salary > salaryThreshold && employee.age > ageThreshold);
+    }
+
     const employees = [
       {name: "Abhay", age: 25, salary: 20000},
       {name: "Joice", age: 30, salary: 35000},
