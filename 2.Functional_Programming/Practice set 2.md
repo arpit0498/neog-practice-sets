@@ -15,7 +15,12 @@
     ];
     
     // Your code here
-    
+    const getNames = (people) => {
+
+    return people.map(person => person.name);
+    }
+    const names = getNames(people);
+
     console.log(names); // Output: ['Raj', 'Swapnil', 'Anushka']
     ```
     
@@ -23,9 +28,13 @@
     
     ```jsx
     const numbers = [1, 2, 3, 4];
+
     // Your code here
-    
-    console.log(multiplyByFive); // Output: [5, 10, 15, 20]
+    const multiplyByFive = (numbers) => {
+    return numbers.map(number => number * 5);
+    }
+    const result = multiplyByFive(numbers);
+    console.log(result); // Output: [5, 10, 15, 20]
     ```
     
 3. Given employee’s data, write an ES6 function which greets them with a personalized message for onboarding.
@@ -38,8 +47,12 @@
     ]
     
     // Your code here
-    
-    console.log(greetEmployeeMessages);
+    const greetEmployeeMessages = (employeeData) => {
+
+      return employeeData.map(employee => `Hi ${employee.name} we are glad to have you as a ${employee.dept}`);
+    }
+    const messages = greetEmployeeMessages(employeeData);
+    console.log(messages);
     // Output: ['Hi ram we are glad to have you as a marketing', 'Hi Radha we are glad to have you as a SDE', 'Hi shyam we are glad to have you as a finance professional']
     ```
     
@@ -54,6 +67,11 @@
     ];
     
     // Your code here
+    const getBookTitles = (books) => {
+
+    return books.map(book => book.title);
+    }
+
     
     const titles = getBookTitles(books);
     console.log(titles); // Output: ['The Great Gatsby', 'To Kill a Mockingbird', '1984', 'Pride and Prejudice']
@@ -64,7 +82,11 @@
     ```jsx
     const studentName = ["Ram", "Anjali", "Arpit", "Bhanu Kumar", "Jaya", "Ankit", "shayam"]
     // Your code here
-    
+    const getStudentsStartingWithA = (studentName) => {
+
+      return studentName.filter(name => name.charAt(0).toLowerCase() === 'a');
+    }
+    const studentNames = getStudentsStartingWithA(studentName);
     console.log(studentNames);
     // Output: ["Anjali", "Arpit", "Ankit"]
     ```
