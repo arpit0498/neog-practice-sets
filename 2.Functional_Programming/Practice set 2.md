@@ -101,6 +101,11 @@
     		{prodName: "Mars", price: 50}
     ]
     // Your code here
+    const getProducts = (products, price) => {
+
+    return products.filter(product => product.price >= price);
+    };
+
     
     console.log(getProducts(productData, 40))
     // Output: [{prodName: 'Dairy Milk Silk', price: 70}, {prodName: 'Mars', price: 50}]
@@ -112,8 +117,12 @@
     ```jsx
     const numbers = [1, 2, 3, 21, 14, 7];
     // Your code here
-    
-    console.log(isDivisibleBy7)
+    const isDivisibleBy7 = (numbers) => {
+
+    return numbers.find(number => number % 7 === 0);
+    };
+
+    console.log(isDivisibleBy7(numbers))
     // Output: 21
     ```
     
@@ -122,6 +131,11 @@
     ```jsx
     const names = ["Mohan", "Anjali", "Geetanjali", "Ankit", "Bhanu Kumar", "Ramakrishnan",  "shayam"]
     // Your code here
+    const isNamesGreaterThan8 = (names) => {
+
+    return names.find(name => name.length > 8);
+    };
+
     
     console.log(isNamesGreaterThan8(names));
     // Output: "Geetanjali"
@@ -138,7 +152,11 @@
     ];
     
     // Your code here
-    
+    const findStudentWithGradeA = (students) => {
+
+      return students.find(student => student.grade === "A");
+    };
+
     const studentWithGradeA = findStudentWithGradeA(students);
     console.log(studentWithGradeA); 
     // Output: { name: "Mary", grade: "A" }
@@ -155,7 +173,11 @@
     ];
     
     // Your code here
-    
+    const findStudent = (students) => {
+
+      return students.find(student => student.grade === "A" || student.scholarship);
+    };
+
     const student = findStudent(students);
     console.log(student); 
     // Output: { name: "Mary", grade: "B", scholarship: true }
@@ -172,7 +194,11 @@
     ];
     
     // Your code here
-    
+    const findStudent = (students) => {
+
+    return students.find(student => student.grade === "B" && student.scholarship);
+    };
+
     const student = findStudent(students);
     console.log(student); 
     // Output: { name: "Sarah", grade: "B", scholarship: true }
@@ -192,7 +218,12 @@
     ];
     
     // Your code here
-    
+    const getBestOldBollywoodMovies = (movies) => {
+
+      return movies.filter(movie => movie.year < 1990 && movie.rating > 8.0)
+                  .map(movie => movie.title);
+    };
+
     const bestOldMovies = getBestOldBollywoodMovies(bollywoodMovies);
     console.log(bestOldMovies); // Output: ['Sholay', 'Parinda']
     ```
