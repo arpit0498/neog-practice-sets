@@ -17,7 +17,9 @@
     ];
     
     // Your code here
-    
+    const findToyotaCar = (cars) => {
+    return cars.find(car => car.make === "Toyota" && car.year > 2010);
+    };
     const toyotaCar = findToyotaCar(cars);
     console.log(toyotaCar); 
     // Output: { make: "Toyota", model: "Camry", year: 2015 }
@@ -34,6 +36,10 @@
     ];
     
     // Your code here
+    const getCarDetails = (cars) => {
+
+    return cars.find(car => car.make === "Toyota" && car.year > 2010);
+    };
     
     const getCars = getCarDetails(cars);
     console.log(getCars);
@@ -51,7 +57,9 @@
     ];
     
     // Your code here
-    
+    const findElectronicsProduct = (products) => {
+      return products.find(product => product.category === "electronics");
+    };
     const electronicsProduct = findElectronicsProduct(products);
     console.log(electronicsProduct); 
     // Output: { name: "iPad", price: 799, category: "electronics" }
@@ -68,6 +76,10 @@
     ];
     
     // Your code here
+    const getAllElectronicProducts = (products) => {
+    return products.filter(product => product.category === "electronics");
+    };
+
     
     const electronicProducts = getAllElectronicProducts(products);
     console.log(electronicProducts); 
@@ -83,7 +95,11 @@
       { name: "Charlie", age: 15, grade: 95 },
       { name: "David", age: 16, grade: 85 },
     ];
+    
     // Your code here
+    const filterStudentsByGrade = (students, gradeThreshold) => {
+      return students.filter(student => student.grade > gradeThreshold);
+    };
     
     const highGradeStudents = filterStudentsByGrade(students, 85);
     console.log(highGradeStudents); 
