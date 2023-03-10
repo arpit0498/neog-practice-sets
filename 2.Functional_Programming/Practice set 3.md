@@ -117,6 +117,11 @@
     ];
     
     // Your code here
+    const findBookWithMoreThan500Pages = (books) => {
+
+    return books.find((book) => book.pageCount > 500);
+    };
+
     
     const bookWithMoreThan500Pages = findBookWithMoreThan500Pages(books);
     console.log(bookWithMoreThan500Pages); 
@@ -133,7 +138,11 @@
       { name: 'Alice', age: 35, gender: 'Female' },
     ];
     // Your code here
-    
+    const getMaleCustomers = (customers) => {
+
+    return customers.filter((customer) => customer.gender === 'Male');
+    };
+
     const maleCustomers = getMaleCustomers(customers);
     console.log(maleCustomers); 
     // Output: [{ name: 'John', age: 25, gender: 'Male' }, { name: 'Bob', age: 40, gender: 'Male' }]
@@ -149,6 +158,11 @@
       {title: "The Legend of Zelda: Breath of the Wild", developer: "Nintendo", genre: "Adventure"}
     ];
     // Your code here
+    const filterByGenre = (games, genre) => {
+
+    return games.filter((game) => game.genre === genre);
+    };
+
     
     const filteredGames = filterByGenre(games, "RPG");
     console.log(filteredGames);
@@ -166,7 +180,12 @@
     ];
     
     // Your code here
-    
+    const getCarModel = (cars) => {
+
+      const filteredCars = cars.filter((car) => car.year > 2012);
+      return filteredCars.map((car) => car.model);
+    };
+
     const carModels = getCarModel(cars);
     console.log(carModels);
     // Output: ["Camry", "Mustang"]
@@ -183,9 +202,14 @@
     ];
     
     // Your code here
-    
-    const booksWithMoreThan500Pages = getTitlesWithMoreThan500Pages(books);
-    console.log(booksWithMoreThan500Pages); 
+    const getTitlesWithMoreThan700Pages = (books) => {
+      const booksWithMoreThan700Pages = books.filter((book) => book.pageCount > 700);
+      const titles = booksWithMoreThan700Pages.map((book) => book.title);
+      return titles;
+    };
+
+    const booksWithMoreThan700Pages = getTitlesWithMoreThan700Pages(books);
+    console.log(booksWithMoreThan700Pages); 
     // Output: ["The Lord of the Rings"]
     ```
 
@@ -194,7 +218,17 @@
     ```jsx
     const numbers = [12, 23, 4, 2, 11, 21] 
     // Your code here
-    
+    const sumOfEvenNumbers = (numbers) => {
+    const sum = numbers.reduce((accumulator, currentNumber) => {
+        if (currentNumber % 2 === 0) {
+          return accumulator + currentNumber;
+        } else {
+          return accumulator;
+        }
+      }, 0);
+      return sum;
+    };
+
     console.log(sumOfEvenNumbers(numbers))
     // Output: 18
     ```
@@ -210,7 +244,15 @@
     ];
     
     // Your code here
-    
+    const getAverageScore = (students) => {
+
+    const totalScore = students.reduce((accumulator, currentStudent) => {
+        return accumulator + currentStudent.score;
+      }, 0);
+      const averageScore = totalScore / students.length;
+      return averageScore;
+    };
+
     console.log(getAverageScore(students)); 
     // Output: 82.5
     ```
@@ -226,7 +268,13 @@
     ];
     
     // Your code here
-    
+    const getTotalCost = (products) => {
+
+    return products.reduce((total, product) => {
+        return total + (product.price * product.quantity);
+      }, 0);
+    };
+
     console.log(getTotalCost(products)); 
     // Output: 150
     ```
@@ -236,6 +284,13 @@
     ```jsx
     const strings = ['Hello', ' ', 'world', '!'];
     // Your code here
+    const concatenateStrings = (strings) => {
+
+    return strings.reduce((result, current) => {
+        return result + current;
+      });
+    };
+
     
     console.log(concatenateStrings(strings)); 
     // Output: "Hello world!"
@@ -247,7 +302,13 @@
     const numbers = [10, 5, 8, 3, 6];
     
     // Your code here
-    
+    const getMinimumNumber = (numbers) => {
+
+      return numbers.reduce((min, current) => {
+        return min < current ? min : current;
+      });
+    }
+
     console.log(getMinimumNumber(numbers)); 
     // Output: 3
     ```
