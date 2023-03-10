@@ -2,9 +2,9 @@
 
 **Instructions:**
 
-1. Make use of .filter(), .find() and .reduce() methods.
-2. You can make use of basic methods such as .length, toLowerCase(), toUpperCase() if needed.
-3. Do NOT use for-loops.
+  - Make use of .filter(), .find() and .reduce() methods.
+ - You can make use of basic methods such as .length, toLowerCase(), toUpperCase() if needed.
+ - Do NOT use for-loops.
 
 1. Write an ES6 function that takes an array of objects representing cars with properties make, model, and year. Return the first car object that is a Toyota and the year is after 2010.
 
