@@ -2,16 +2,19 @@
 
 **Instructions:**
 
-1. Make use of **.reduce()** method in this set.
-2. You can make use of basic methods such as .length, toLowerCase(), toUpperCase() if needed.
-3. Do NOT use for-loops.
+- Make use of **.reduce()** method in this set.
+- You can make use of basic methods such as .length, toLowerCase(), toUpperCase() if needed.
+- Do NOT use for-loops.
 
 1. Given an array, write an ES6 function that returns the total length of all the strings in an array.
 
     ```jsx
     const strings = ["apple", "banana", "cherry", "date", "blueberry"];
     // Your code here
-    
+    const totalLength = (arr) => {
+
+    return arr.reduce((total, str) => total + str.length, 0);
+    };
     console.log(totalLength(strings));
     // Output: 30
     ```
@@ -21,7 +24,10 @@
     ```jsx
     const numbers = [1, 2, 3, 4, 5];
     // Your code here
-    
+    const sumSquares = (arr) => {
+
+    return arr.reduce((total, num) => total + Math.pow(num, 2), 0);
+    };
     console.log(sumSquares(numbers));
      // Output: 55 
     ```
@@ -35,7 +41,10 @@
       { name: "Item 3", price: 30 }
     ];
     // Your code here
-    
+    const totalValue = (arr) => {
+
+    return arr.reduce((total, item) => total + item.price, 0);
+    };
     console.log(totalValue(items)); 
     // Output: 60
     ```
@@ -44,7 +53,10 @@
 
     ```jsx
     // Your code here
-    
+    const concatStrings = (arr) => {
+
+    return arr.reduce((total, str) => total + str, "");
+    };
     console.log(concatStrings(['this', 'is', 'fun'])); // Output: 'thisisfun'
     ```
 
@@ -53,7 +65,10 @@
     ```jsx
     const numbers = [1, 2, 3, 4, 5];
     // Your code here
-    
+    const product = (arr) => {
+
+    return arr.reduce((total, num) => total * num, 1);
+    };
     console.log(product(numbers));
     // Output: 120
     ```
