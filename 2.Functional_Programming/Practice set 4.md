@@ -78,7 +78,12 @@
     ```jsx
     const strings = ["neogcamp", "Haule Haule", "code", "Batman", "Awesome"];
     // Your code here
-    
+    const longestString = (strings) => {
+
+    return strings.reduce((longest, current) => {
+        return current.length > longest.length ? current : longest;
+    }, '');
+    };
     console.log(longestString(strings)); 
     // Output: 'Haule Haule'
     ```
@@ -92,7 +97,13 @@
        {name: 'Naina', age: 45}
     ]
     // Your code here
-    
+    const oldestPersonName = (people) => {
+
+    const oldest = people.reduce((prev, current) => {
+        return prev.age > current.age ? prev : current;
+    });
+    return oldest.name;
+    };
     console.log(oldestPersonName(people)); 
     // Output: 'Naina'
     ```
