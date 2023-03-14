@@ -118,7 +118,13 @@
       { name: 'David', age: 40 }
     ];
     // Your code here
-    
+    const getAverageAge = (people) => {
+
+    const totalAge = people.reduce((sum, person) => sum + person.age, 0);
+    const averageAge = totalAge / people.length;
+    return { averageAge };
+    };
+
     console.log(getAverageAge(people));
     // Output: { averageAge: 32.5 }
     ```
@@ -133,9 +139,27 @@
       { name: "Slipper", price: 40, quantity: 3 }
     ];
     // Your code here
-    
+    const findMostExpensiveProduct = (products) => {
+
+    return products.reduce((mostExpensive, currentProduct) => {
+        return (currentProduct.price > mostExpensive.price) ? currentProduct : mostExpensive;
+    });
+    };
+
     console.log(findMostExpensiveProduct(products)); 
     // { name: "Slipper", price: 40, quantity: 3 }
     ```
 
 10. Write an ES6 function that takes an array of strings and returns an object with the count of each string.
+
+  ```jsx
+    const countStrings = (arr) => {
+    return arr.reduce((count, str) => {
+        count[str] = (count[str] || 0) + 1;
+        return count;
+    }, {});
+    };
+    const strings = ["apple", "banana", "orange", "apple", "orange", "grape"];
+    console.log(countStrings(strings));
+    // { apple: 2, banana: 1, orange: 2, grape: 1 }
+  ```
