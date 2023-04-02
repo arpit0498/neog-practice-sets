@@ -355,7 +355,9 @@ const fakeFetch = (url) => {
     }, 2000);
   });
 };
+```
 
+```jsx
 const userId = "NC002";
 const url = `https://example.com/api/profile/${userId}`;
 
