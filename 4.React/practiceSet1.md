@@ -15,6 +15,9 @@
 
 Solution: codesandbox link
 
+<a href="https://codesandbox.io/s/react-ps1-1-dc2slt" 
+target="_blank">Open in new tab</a>
+
 [Click here](https://codesandbox.io/s/react-ps1-1-dc2slt)
       
 
@@ -29,6 +32,8 @@ const borderRadius = '5px'
 const padding = '10px'
 ```
 Solution: codesandbox link
+<a href="https://codesandbox.io/s/react-ps1-2-9jnh3x"
+target="_blank">Open in new tab</a>
 
 [Click here](https://codesandbox.io/s/react-ps1-2-9jnh3x)
 
@@ -42,6 +47,8 @@ const items = ['pen', 'pencil', 'ruler', 'eraser']
 ```
 
 Solution: codesandbox link
+<a href="https://codesandbox.io/s/react-ps1-3-ylwuuk"
+target="_blank">Open in new tab</a>
 
 [Click here](https://codesandbox.io/s/react-ps1-3-ylwuuk)
 4. Build a React component to display an image with a caption. The image and caption should be passed as props.
@@ -54,6 +61,9 @@ const caption = 'Spring Flowers'
 ```
 
 Solution: codesandbox link
+
+<a href="https://codesandbox.io/s/react-ps1-4-x1w82y"
+target="_blank">Open in new tab</a>
 
 [Click here](https://codesandbox.io/s/react-ps1-4-x1w82y)
 
