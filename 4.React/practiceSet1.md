@@ -13,6 +13,11 @@
 - The colour of “Designation:” should be green.
 - The colour of “Experience:” should be blue.
 
+Solution: codesandbox link
+
+[Click here](https://codesandbox.io/s/react-ps1-1-dc2slt)
+      
+
 2. Build a React component to display a button with custom styles and button text as ‘Start’. 
 - The styles should be passed as props.
 
@@ -23,6 +28,10 @@ const color = 'darkgreen'
 const borderRadius = '5px'
 const padding = '10px'
 ```
+Solution: codesandbox link
+
+[Click here](https://codesandbox.io/s/react-ps1-2-9jnh3x)
+
 3. Build a React component to display a list of stationery items with a header. 
 - The items and header should be passed as props. 
 - Header should be “Stationery Items”.
@@ -31,6 +40,10 @@ Data:
 ```jsx
 const items = ['pen', 'pencil', 'ruler', 'eraser']
 ```
+
+Solution: codesandbox link
+
+[Click here](https://codesandbox.io/s/react-ps1-3-ylwuuk)
 4. Build a React component to display an image with a caption. The image and caption should be passed as props.
 
 Data:
@@ -39,6 +52,10 @@ const imageLink =
   'https://cdn.pixabay.com/photo/2023/03/18/10/43/plum-blossoms-7860381_1280.jpg'
 const caption = 'Spring Flowers'
 ```
+
+Solution: codesandbox link
+
+[Click here](https://codesandbox.io/s/react-ps1-4-x1w82y)
 
 5. Given the products data. Build a React component to display the name of all products as an unordered list on the DOM. Order of items display can vary from the image shown below.
 
