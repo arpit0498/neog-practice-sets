@@ -17,6 +17,20 @@
     console.log(message);
     // The array has 3 items, and the first item is "apple", and the last item is "orange".
     ```
+    ```jsx
+    const formatArray = (arr) => {
+
+    if (arr.length === 0) {
+        return "The array is empty.";
+        } else if (arr.length === 1) {
+            return `The array has 1 item, and it is "${arr[0]}".`;
+        } else {
+            return `The array has ${arr.length} items, and the first item is "${arr[0]}", and the last item is "${arr[arr.length - 1]}".`;
+        }
+    }
+
+
+    ```
 
 2. Create a function that takes a product object as an argument and returns a string that includes the product name, price, and a message based on whether it is in stock or not.
 
