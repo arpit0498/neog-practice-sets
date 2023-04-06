@@ -9,10 +9,18 @@
 
 1.Create a React component called Greeting that receives a name prop and displays a message like "Hello, name!" on the DOM.
 
+[click here](https://codesandbox.io/s/react-ps2-0-3mrgrj)
+
+
+
 2.Build a Product component that receives product name and price as props and displays them on DOM.
 
 - The name should be in bold and blue in color
 - Price should be in italics and green in color
+
+[click here](https://codesandbox.io/s/react-ps2-0-3mrgrj)
+
+
 3.Build a React component called UserProfile that receives an object representing a user as prop and display the details on the DOM.
 
 Data:
@@ -23,6 +31,7 @@ const userData = {
   email: 'john@example.com',
 }
 ```
+[click here](https://codesandbox.io/s/react-ps2-0-3mrgrj)
 
 4.Build a React component called Gadgets that receives an array of products as a prop. Render each product's name, description, and price as an ordered list. Add a border around the product details which has price above 50000.
 
@@ -58,6 +67,9 @@ const products = [
   { id: 7, name: 'mobile', description: 'iPhone 12', price: 90000 },
 ]
 ```
+[click here](https://codesandbox.io/s/react-ps2-0-3mrgrj)
+
+
 5.Build a React component called Phones that receives an array of products as a prop. Display only the mobile phones as an unordered list. Display their name, description, and price on the DOM.
 
 Data:
@@ -93,6 +105,11 @@ const products = [
   { id: 8, name: 'mobile', description: 'iPhone 12', price: 90000 },
 ]
 ```
+
+[click here](https://codesandbox.io/s/reactjs-2-5-1tkscj)
+
+
+
 6.Build a React component called Article that accepts two props: title and content. Inside the component, render a `<h1>` tag with the title prop and a button below that which says “Know More”. On the click of the button, show the content in a <p> tag just below the button.
 
 Data:
@@ -100,6 +117,8 @@ Data:
 const title = 'React is awesome'
 const content = 'React is a JavaScript library for building user interfaces.'
 ```
+[click here](https://codesandbox.io/s/reactjs-2-6-fs99nv)
+
 
 7.Build a React component called About that accepts three props: heading, your name and learning. Inside the component, render a `<h1>` tag with the heading prop, `<h2>` tag with your name and a button below that which says “Know More”. On the click of the button, show the learning in a `<p>` tag just below the button.
 
@@ -109,6 +128,10 @@ const heading = 'About Me'
 const name = 'Preeti' // you can put your name
 const learning = 'I am learning React JS currently at neoG Camp.'
 ```
+
+[click here](https://codesandbox.io/s/reactjs-2-7-im2wkf)
+
+
 8.Build a React component called MyGadgets that receives an array of products as a prop. Render each product's name, description, and price as an ordered list. Create a button below all the listings which says “Highlight Expensive Gadget” and on click of the button add a lightgreen backgroundColor to the items which has a price more than 50000.
 
 Data:
@@ -150,6 +173,11 @@ const products = [
   { id: 9, name: 'mobile', description: 'iPhone 12', price: 90000 },
 ]
 ```
+
+[click here](https://codesandbox.io/s/reactjs-2-8-f1c1of)
+
+
+
 9.Build a React component called "ColorPicker" that displays a list of colors as buttons. On click of each button show the HEX code for that color, just below each button.
 
 Data:
@@ -160,6 +188,10 @@ const green = '#7FFFD4'
 ```
 
 <img src="./Images/practiceSet2/ex8.png"/>
+
+[click here](https://codesandbox.io/s/reactjs-2-9-gegqgd)
+
+
 
 10.Build a "Todo" React component that takes a prop called "todoItems". Inside the component, Display the title of a to-do item in a heading tag and the description in a paragraph. If the todoItem is completed, show the title and description in green color otherwise in red color.
 
@@ -197,3 +229,5 @@ const todoItems = [
     isCompleted: false,
   },
 ]
+
+[click here](https://codesandbox.io/s/reactjs-2-10-1m576t)
