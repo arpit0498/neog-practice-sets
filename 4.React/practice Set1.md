@@ -70,6 +70,7 @@ target="_blank">Open in new tab</a>
 5. Given the products data. Build a React component to display the name of all products as an unordered list on the DOM. Order of items display can vary from the image shown below.
 
 <img src="./Images/practiceSet1/ex3.png">
+[Click here](https://codesandbox.io/s/react-ps-1-5-o23yvx)
 
 Data:
 
@@ -88,6 +89,8 @@ Order of items display can vary from the image shown below.
 
 <img src="./Images/practiceSet1/Ex6.png"></img>
 
+[Click here](https://codesandbox.io/s/reactjs-ps-1-6-445o3v)
+
 7. Given a student object with student name and the marks for english, maths and computers. 
 - If the total marks of a student is >= 225, the grade is A, >=180 the grade is B, >=150 the grade is C, otherwise the grade is D. 
 - Build a React Component that takes the student object as props and uses it to show all the students details, total marks and grade on the DOM as shown in the image below.
@@ -103,6 +106,10 @@ const student = {
   computers: 70,
 }
 ```
+
+[Click here](https://codesandbox.io/s/reacjs-ps-1-7-bpcsm4)
+
+
 8. Build a React component to display all the employee details as unordered list on the DOM in the following format:
 
 ```jsx
@@ -172,8 +179,25 @@ const employees = [
   },
 ]
 ```
+
+[Click here](https://codesandbox.io/s/reacjs-ps-1-8-c8mkq4)
+
+
 9. Considering above data given in question 8, at the end of all the employee details, calculate and display the total salary expense of the company. Total Salary Expense: totalSalary
+
+[Click here](https://codesandbox.io/s/reacjs-ps-1-9-v00mwg)
+
+
 
 10. Considering above data given in question 8, display the details of employee with orange backgroundColor, who are at level 2.
 
+[Click here](https://codesandbox.io/s/reacjs-ps-1-10-bo2lbe)
+
+
+
+
 11. Considering above data given in question 8, add a border around the employee details whose designation is “President”.
+
+[Click here](https://codesandbox.io/s/reacjs-ps-1-11-me7tpz)
+
+
