@@ -8,6 +8,8 @@
 
 1.Build a React component which takes an image, image height and image width as props and sets the height and width of the image and displays the image on DOM. Image link - `<https://picsum.photos/200>`
 
+[click here](https://codesandbox.io/s/react-ps3-inc6li)
+
 2.Given an array of objects with cartoon character details as: id, name, superpower, magnitude. Build a React component and display all details of those characters whose magnitude is greater than 5. Data:
 ```jsx
 const cartoons = [
@@ -43,9 +45,19 @@ const cartoons = [
   }
 ]
 ```
+
+[click here](https://codesandbox.io/s/react-ps3-2-nqu4oh)
+
+
 3.Use the cartoons data from above question (2) and build a React component to display only the names of characters whose magnitude is an even number. Use h1 tag to display names. Pass the entire data as props.
 
+[click here](https://codesandbox.io/s/react-ps3-3-buw4l1)
+
+
 4.Use the cartoons data from above question (2) and build a React component that takes the superpower ”Intelligence”, as prop and display the details of the character having that super power. Show details on DOM in the format “name - superpower - magnitude”.
+
+[click here](https://codesandbox.io/s/react-ps3-4-q99x1f)
+
 
 5.Build a React component to display the list of all the vegetables and their pick date as ordered list. Create a button which says “Highlight Fresh Vegetables”. On click of the button change the color of the vegetable to green whose pick date is ‘2023-03-30’.
 
@@ -80,6 +92,10 @@ const vegetables = [
 ]
 ```
 
+[click here](https://codesandbox.io/s/react-ps3-5-viiiqf)
+
+
+
 6.Build a React component which takes an array of objects as props. The object represents a bouquet of mixed flowers and consists of: id, flowers, totalFlowers, and price. Display the price of that bouquet on the DOM that has rose in it, in the format, “Price of bouquet with roses : {price}”
 
 Data:
@@ -99,6 +115,10 @@ const bouquet = [
   },
 ]
 ```
+
+[click here](https://codesandbox.io/s/react-ps3-6-fxtthc)
+
+
 7.Build a React component to display the flowers of a bouquet in an ordered list on the DOM which has a price above 2000. Pass data as prop.
 
 Data:
@@ -122,6 +142,8 @@ const bouquet = [
 // 1. snapdragon
 // 2. sunflower
 ```
+[click here](https://codesandbox.io/s/react-ps3-7-go3509)
+
 
 8.Given an array of objects representing people who donated money to the NGO. Each object consists of: id, name, amount. Build a React component that takes the data as props and shows the total donation collected on the DOM. Output should be in the format: `Total Donation Collected: _amount_`
 
@@ -151,6 +173,10 @@ const DonationData = [
   },
 ]
 ```
+
+[click here](https://codesandbox.io/s/react-ps3-8-g8k7hm)
+
+
 9.Given an array of objects representing a list of cars. Each object consists of: id, name, price, category. Build a React component that shows on the DOM the total number of cars present in each category. For Example: if there are categories, luxury and sports, where there are 5 luxury cars and 2 sports car then the data should be represented as:
 
 `luxury: 5`
@@ -187,6 +213,10 @@ const cars = [
 ]
 ```
 
+[click here](https://codesandbox.io/s/react-ps3-9-sd88pu)
+
+
+
 10.Create an array of objects representing students marks out of 100. Each object consists of: id, name and marks. Build a React component that calculates the mean marks of all the students to see if the institute passes the criteria of the certification.
 
 If the mean is above 80, display on the DOM `Certification Approved`
@@ -218,3 +248,5 @@ const studentData = [
   },
 ]
 ```
+
+[click here](https://codesandbox.io/s/react-ps3-10-vfpf21)
