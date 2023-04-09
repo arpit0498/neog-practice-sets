@@ -66,6 +66,8 @@ const characters = {
 <img src="./Images/practiseSet4/ex1.2.png">
 <img src="./Images/practiseSet4/ex1.3.png">
 
+[click](https://codesandbox.io/s/react-ps4-1-nk4nv5)
+
 2.Build a React component with two buttons + and - which increases/decreases the font size of a heading text “Welcome” by 1px. Keep the initial font size to 18px. Use useState Hook.
 <img src="./Images/practiseSet4/Ex2.png">
 
