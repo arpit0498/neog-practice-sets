@@ -170,5 +170,3 @@ b. Add buttons to filter the books by genre using the useState hook.
 <img src="./Images/practiseSet4/ex7.png">
 
 <img src="./Images/practiseSet4/ex7.1.png">
-
-
