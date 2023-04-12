@@ -11,6 +11,8 @@
 1.Create a React component where all the users are fetched using fake fetch and listed on the DOM. Show the online users in green color and the offline users in red color.
 <img src="./Images/practiceSet5/ex1.png">
 
+[click](https://codesandbox.io/s/ps5-1-3khe4z)
+
 fakeFetch has been provided:
 
 ```jsx
@@ -43,7 +45,11 @@ export const fakeFetch = (url) => {
 
 2.Create a React component that fetches products data from an API endpoint using useEffect hook and display products (name, price, quantity) as a list on the screen using the useState hook.
 
+[click](https://codesandbox.io/s/ps5-2-hy2k3u
+
 a. Add a button, on click of which it displays only the items with more than 20 as quantity.
+
+[click](https://codesandbox.io/s/ps5-2a-nervj4)
 
 <img src="./Images/practiceSet5/ex2a.png">
 
@@ -81,7 +87,11 @@ export const fakeFetch = (url) => {
 
 3.In the above question after you have listed all the items, add a button which says “Filter by Price”. On click of the button, display only the items with price less than 100.
 
+[click](https://codesandbox.io/s/ps5-3-y8rui8)
+
 4.Create a React component that fetches a user’s data from an API endpoint using useEffect hook and displays the data (name, image, likes, comments) on the screen using the useState hook. Pass heading (”User Profile”) and width and height for image as props to the component.
+
+[click](https://codesandbox.io/s/ps5-4-p9zcz4)
 
 <img src="./Images/practiceSet5/ex4.png">
 
@@ -119,6 +129,8 @@ export const fakeFetch = (url) => {
 a. Show “Loading…” until your data displays on the DOM.
 
 b. Handle errors by showing an error message on the DOM, in case of any error.
+
+[click](https://codesandbox.io/s/ps5-5-z0me9d)
 
 <img src="./Images/practiceSet5/ex5.png">
 
@@ -172,6 +184,8 @@ export const fakeFetch = (url) => {
 6.Create a React component that fetches chat data from an API endpoint using useEffect hook and display chat data (name and chat message) as a list on the screen using the useState hook.
 
 a. Show “Loading Chats…” until your data displays on the DOM.
+
+[click](https://codesandbox.io/s/ps5-6-eorv5t)
 
 <img src="./Images/practiceSet5/ex6.png" >
 
@@ -247,9 +261,13 @@ export const fakeFetch = (url) => {
 
 a. Fetch the comments using thefake fetch and list the data on DOM.
 
+[click](https://codesandbox.io/s/ps5-7a-p83rxd)
+
 b. Each comment component will have the text, user’s name and a delete button.
 
 c. On click of the delete button, that particular comment object should be deleted and should not be visible on the DOM.
+
+[click](https://codesandbox.io/s/ps5-7b-ixqpst)
 
 <img src="./Images/practiceSet5/ex7.png">
 
