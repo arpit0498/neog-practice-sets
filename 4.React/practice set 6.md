@@ -9,6 +9,8 @@ Instructions:
 
 1.Create a React component that calls the product api and has the same number of buttons as the items in product. On Click of each button show the details of that card only. Example: In the below API we have three products and three buttons.
 
+[click here](https://codesandbox.io/s/ps6-1-zc1rss)
+
 <img src="./Images/practiceSet6/ex1.png">
 
 ```jsx
@@ -57,6 +59,8 @@ const fakeFetch = (url) => {
 
 2.Create a React component that calls the todo api and display the todos in an unordered list and show the todos as a list. The todo should display a heading with a little description of what that todo is about. Under that, it should display all the tasks to be done as a list.
 
+[click here](https://codesandbox.io/s/ps6-2-mk888v)
+
 <img src="./Images/practiceSet6/ex2.png">
 
 ```jsx
@@ -99,6 +103,8 @@ const fakeFetch = (url) => {
 ```
 
 3.Create a React component that calls the habit tracker api when the page is loaded completely and display the habits with the total days they were followed and days skipped in between.
+
+[click here](https://codesandbox.io/s/ps6-3-pwcw7c)
 
 <img src="./Images/practiceSet6/ex3.png">
 
@@ -157,6 +163,9 @@ const fakeFetch = (url) => {
 ```
 
 4.Create a React component that calls the video library api when the page is loaded completely and display all the videos on the screen. And on click of `delete` button, delete the first video in the list.
+
+[click here](https://codesandbox.io/s/ps6-4-6b0k63)
+
 <img src="./Images/practiceSet6/ex4a.png">
 
 <img src="./Images/practiceSet6/ex4b.png">
@@ -222,6 +231,9 @@ const fakeFetch = (url) => {
 ```
 
 5.Create a react component that calls the social media api when the page is loaded completely and display all the posts on the screen. And on click of `show bakery` button, show only the posts with category as bakery.
+
+[click here](https://codesandbox.io/s/ps6-5-kw2ddp)
+
 <img src="./Images/practiceSet6/ex5a.png">
 
 <img src="./Images/practiceSet6/ex5b.png">
@@ -293,6 +305,9 @@ export const fakeFetch = (url) => {
 ```
 
 6.Create a React component that calls the habit tracker api and display only the habits which are unarchived with heading “Unarchived”. Create a `show archive` button and on click of `show archive` button show the archive habits and hide the unarchives. Change the heading of the page to “Archived” when the button is clicked.
+
+[click here](https://codesandbox.io/s/ps6-6-90yz9k)
+
 <img src="./Images/practiceSet6/ex6a.png">
 <img src="./Images/practiceSet6/ex6b.png">
 
@@ -357,6 +372,8 @@ export const fakeFetch = (url) => {
 
 7.Create a React component that calls the projects api and list all the projects when the page loads with titles and description. Create buttons saying “Show Details” for each project. On click of the button show `title, description, technologies, completed` of that project only.
 
+[click here](https://codesandbox.io/s/ps6-7-wo1z5e)
+
 <img src="./Images/practiceSet6/ex7.png">
 
 ```jsx
@@ -419,6 +436,9 @@ export const fakeFetch = (url) => {
 ```
 
 8.Create a React component that calls the userProfile api and list the details of the user when the page loads. Create a button saying`Update name`and on click of that button, change the name of the user.
+
+[click here](https://codesandbox.io/s/ps6-8-rj7kkz)
+
 <img src="./Images/practiceSet6/ex8a.png">
 
 <img src="./Images/practiceSet6/ex8b.png">
@@ -454,6 +474,8 @@ export const fakeFetch = (url) => {
 
 9.Create a React component that calls the video api and display all the details of the video on the screen. And on click of `add label` button, add a label property to the object and display the details on the screen
 
+[click here](https://codesandbox.io/s/ps6-9-3nc1mx)
+
 <img src="./Images/practiceSet6/ex9.png">
 
 <img src="./Images/practiceSet6/ex9b.png">
@@ -487,6 +509,8 @@ export const fakeFetch = (url) => {
 ```
 
 10.Create a React component that calls the socialMedia profile api and when the page is loaded show details of the user and a button `follow ` along with the name of the user on the button. On click of that increase the followers count by one and disable the button.
+
+[click here](https://codesandbox.io/s/ps6-10-3tlcg3)
 
 <img src="./Images/practiceSet6/ex10.png">
 
