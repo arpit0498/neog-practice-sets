@@ -2,6 +2,8 @@
 
 1.Create a React component that fetches weather data from an API endpoint using useEffect hook and displays the current temperature, humidity, and wind speed on the screen using the useState hook. Add a button which toggles between Celsius and Fahrenheit units for the temperature.
 
+[click here](https://codesandbox.io/s/ps7-1-y6vwo2)
+
 ```JSX
 const fakeFetch = (url) => {
   return new Promise((resolve, reject) => {
@@ -27,14 +29,9 @@ const fakeFetch = (url) => {
 };
 ```
 
-Expected Output#
-Example
+2.Create a React component that fetches user data from an API endpoint using useEffect hook and displays the user's name, email, and phone number on the screen using the useState hook. Add a button which toggles the display of the user's address (street, suite, city, zipcode).
 
-On clicking the button
-
-Example
-
-Create a React component that fetches user data from an API endpoint using useEffect hook and displays the user's name, email, and phone number on the screen using the useState hook. Add a button which toggles the display of the user's address (street, suite, city, zipcode).
+[click here](https://codesandbox.io/s/ps7-2-r5w5ch)
 
 ```JSX
 const fakeFetch = (url) => {
@@ -67,14 +64,9 @@ const fakeFetch = (url) => {
 };
 ```
 
-Expected Output#
-Example
+3.Create a React component that fetches a list of movies from an API endpoint using useEffect hook and displays the title, year, and rating of each movie on the screen using the useState hook. Add a dropdown which filters the movies by year. You can keep 5 dropdown values - 2005 to 2010.
 
-On clicking the button
-
-Example
-
-Create a React component that fetches a list of movies from an API endpoint using useEffect hook and displays the title, year, and rating of each movie on the screen using the useState hook. Add a dropdown which filters the movies by year. You can keep 5 dropdown values - 2005 to 2010.
+[click here](https://codesandbox.io/s/ps7-3-n7z4if)
 
 ```JSX
 const fakeFetch = (url) => {
@@ -103,14 +95,9 @@ const fakeFetch = (url) => {
 };
 ```
 
-Expected Output#
-Example
+4.Create a React component that fetches a list of users from an API endpoint using useEffect hook and displays the name, email, and website of each user on the screen using the useState hook. Add a dropdown which filters the users by company name.
 
-On typing the year, it will filter
-
-Example
-
-Create a React component that fetches a list of users from an API endpoint using useEffect hook and displays the name, email, and website of each user on the screen using the useState hook. Add a dropdown which filters the users by company name.
+[click here](https://codesandbox.io/s/ps7-4-iegyd5)
 
 ```JSX
 const fakeFetch = (url) => {
@@ -139,14 +126,9 @@ const fakeFetch = (url) => {
 };
 ```
 
-Expected Output#
-Example
+5.Create a component that displays a random quote from an API using the useEffect and useState hooks. The component should fetch a new quote when the user clicks a button.
 
-On typing the name, it will filter out
-
-Example
-
-Create a component that displays a random quote from an API using the useEffect and useState hooks. The component should fetch a new quote when the user clicks a button.
+[click here](https://codesandbox.io/s/ps7-5-4b1p16)
 
 ```JSX
 const fakeFetch = () => {
@@ -182,14 +164,9 @@ const fakeFetch = () => {
 };
 ```
 
-Expected Output#
-Example
+6.Create a React component that fetches a list of movies from an API endpoint using useEffect hook and displays the title, year, and genre of each movie on the screen using the useState hook. Add a dropdown which filters the movies by genre.
 
-Clicking the button will generate a new quote
-
-Example
-
-Create a React component that fetches a list of movies from an API endpoint using useEffect hook and displays the title, year, and genre of each movie on the screen using the useState hook. Add a dropdown which filters the movies by genre.
+[click here](https://codesandbox.io/s/ps7-6-n7909p)
 
 ```JSX
 const fakeFetch = (url) => {
@@ -263,14 +240,9 @@ const fakeFetch = (url) => {
 };
 ```
 
-Expected Output#
-Example
+7.Create a React component that fetches a list of products from an e-commerce API endpoint using useEffect hook and displays the product name, description, price, and quantity on the screen using the useState hook. Add a button which allows the user to sort the products by price (lowest to highest).
 
-On typing the genre, it will filter out
-
-Example
-
-Create a React component that fetches a list of products from an e-commerce API endpoint using useEffect hook and displays the product name, description, price, and quantity on the screen using the useState hook. Add a button which allows the user to sort the products by price (lowest to highest).
+[click here](https://codesandbox.io/s/ps7-7-bk2k4q)
 
 ```JSX
 const fakeFetch = (url) => {
@@ -321,14 +293,9 @@ const fakeFetch = (url) => {
 };
 ```
 
-Expected Output#
-Example
+8.Adding on to the previous question, There should be three buttons for this purpose: "Low to High", "High to Low", and "Reset". When the user clicks on "Low to High", the products should be sorted by price in ascending order. When the user clicks on "High to Low", the products should be sorted by price in descending order. When the user clicks on "Reset", the products should be displayed in their original order.
 
-On clicking the button it will sort it out by price
-
-Example
-
-Adding on to the previous question, There should be three buttons for this purpose: "Low to High", "High to Low", and "Reset". When the user clicks on "Low to High", the products should be sorted by price in ascending order. When the user clicks on "High to Low", the products should be sorted by price in descending order. When the user clicks on "Reset", the products should be displayed in their original order.
+[click here](https://codesandbox.io/s/ps7-8-w3tx4h)
 
 ```JSX
 const fakeFetch = (url) => {
@@ -379,22 +346,9 @@ const fakeFetch = (url) => {
 };
 ```
 
-Expected Output#
-Example
+9.Create a React component that uses the useEffect hook to fetch the product data from the API endpoint using the fakeFetch function provided below. The component should use the useState hook to store the fetched data and a second state variable to store the sorted data. The sorted data should be sorted in descending order by rating.
 
-On click Low to High
-
-Example
-
-On click High to Low
-
-Example
-
-On click the Reset button
-
-Example
-
-Create a React component that uses the useEffect hook to fetch the product data from the API endpoint using the fakeFetch function provided below. The component should use the useState hook to store the fetched data and a second state variable to store the sorted data. The sorted data should be sorted in descending order by rating.
+[click here](https://codesandbox.io/s/ps7-9-18skw0)
 
 ```JSX
 const fakeFetch = (url) => {
@@ -425,10 +379,9 @@ const fakeFetch = (url) => {
 };
 ```
 
-Expected Output#
-Example
+10.Adding on to the previous question, Add a search bar to the component that allows users to filter the products by name. The search bar should update the list of displayed products in real-time as the user types. The search functionality should be case-insensitive.
 
-Adding on to the previous question, Add a search bar to the component that allows users to filter the products by name. The search bar should update the list of displayed products in real-time as the user types. The search functionality should be case-insensitive.
+[click here](https://codesandbox.io/s/ps7-10-w638ef)
 
 ```JSX
 const fakeFetch = (url) => {
@@ -458,6 +411,3 @@ const fakeFetch = (url) => {
   });
 };
 ```
-
-Expected Output#
-Example
