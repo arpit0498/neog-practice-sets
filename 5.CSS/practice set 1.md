@@ -2,18 +2,20 @@
 
 Instructions:
 
-        Do these questions in a Vanilla JS template editor. You can use Vanilla JS CodeSandbox or REPL.
-        This set is about practicing CSS.
-        Use Internal or External CSS to solve these. Do not write inline styles.
-        You don’t need to do this in React JS.
-        Questions:#
-        Create a HTML page with a heading and a paragraph.
+    Do these questions in a Vanilla JS template editor. You can use Vanilla JS CodeSandbox or REPL.
+    This set is about practicing CSS.
+    Use Internal or External CSS to solve these. Do not write inline styles.
+    You don’t need to do this in React JS.
+    Questions:#
+    Create a HTML page with a heading and a paragraph.
 
-Style the heading to have a font size of 36px and a font color of #333333.
-Style the paragraph to have a font size of 18px, a font color of #666666, and have a line height of 1.5.
-Add a margin of 20px between the heading and the paragraph.
-Use default serif font-family for heading and paragraph.
+Style the heading to have a font size of 36px and a font color of `#333333.`
+Style the paragraph to have a font size of 18px, a font color of `#666666`, and have a line height of `1.5`.
+Add a margin of `20px` between the heading and the paragraph.
+Use default `serif` font-family for heading and paragraph.
 Output:Output
+
+[click here](https://codesandbox.io/s/css1-1-cyidn3)
 
 Create a HTML page with a list of 5 items. HTML template has been provided below. Add your CSS to it as follows:
 
