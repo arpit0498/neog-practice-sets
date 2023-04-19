@@ -103,4 +103,4 @@ Add a 20-pixel padding to the left and right of the search bar element.
 Set the background color of the search bar to white.
 Add a placeholder text of "Search" to the search bar, with a font color of #999999.
 Change the font of the search bar to Open Sans, with a font size of 16 pixels and a font weight of 400.
-[click here]()
+[click here](https://codesandbox.io/s/css1-7-5p9nni)
