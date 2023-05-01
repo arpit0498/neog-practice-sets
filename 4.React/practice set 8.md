@@ -7,6 +7,8 @@
 - wish list page
 - A 404 page should be displayed when user enters wrong url
 
+[Solution ](https://codesandbox.io/s/ps8-1-wcjlqc)
+
 ```jsx
 export const fakeFetch = (url) => {
   return new Promise((resolve, reject) => {
@@ -84,6 +86,8 @@ Page when you enter wrong URL:
 
 **2.In the above question, in your product listing page add a “Add to Cart” button along with each product. On click of the button, add that item to your cart. The added product should be visible in the My Cart page. Show the total number of items available in the cart at the top of the page. Do this using context.**
 
+[Solution ](https://codesandbox.io/s/ps8-2-59j6ho)
+
 ![](./Images//practiceSet8/ex2.1.png)
 
 My Cart with total items listed
@@ -91,6 +95,8 @@ My Cart with total items listed
 ![](./Images//practiceSet8/ex2.2.png)
 
 **3.In the question above, add a “Remove from cart” button in the My Cart page for each product. On click of this button, the product should be removed from the cart.**
+
+[Solution ](https://codesandbox.io/s/ps8-3-xff9xc)
 
 ![](./Images//practiceSet8/ex3.1.png)
 
@@ -100,6 +106,8 @@ Items removed from cart
 
 **4.In the above question, in your product listing page add a “Add to Wishlist” button along with each product. On click of the button, add that item to your Wishlist page. The added product should be visible in the My Wishlist page. Show the total number of items available in the Wishlist at the top of the page. Do this using context.**
 
+[Solution ](https://codesandbox.io/s/ps8-4-4tptz7)
+
 ![](./Images//practiceSet8/ex4.1.png)
 
 Wishlist
@@ -107,6 +115,8 @@ Wishlist
 ![](./Images//practiceSet8/ex4.2.png)
 
 **5.In the question above, add a “Remove from Wishlist” button in the My Wishlist page for each product. On click of this button, the product should be removed from the Wishlist.**
+
+[Solution ](https://codesandbox.io/s/ps8-5-4b4hb7)
 
 ![](./Images//practiceSet8/ex5.1.png)
 
@@ -120,6 +130,8 @@ Item removed from Wishlist
 - Done Todos page
 - Open Todos page
 - Page for Individual Todos item to show details of each Todo.
+
+[Solution ](https://codesandbox.io/s/ps8-6-2tz50m)
 
 ```jsx
 const fakeFetch = (url) => {
@@ -202,13 +214,18 @@ Single Todo Page
 - On click of the button, add that todo to the Done Todos page.
 - Show the total number of Todos done on top of the Done Todos pages.
 - In the Summary page, strike through that todo.
-  ![](./Images//practiceSet8/ex7.1.png)
+
+[Solution ](https://codesandbox.io/s/ps8-7-v2esm4)
+
+![](./Images//practiceSet8/ex7.1.png)
 
 Done Todos
 
 ![](./Images//practiceSet8/ex7.2.png)
 
 **8.In the above question, show the total number of Open Todos on the top of Open Todos page using context.**
+
+[Solution ](https://codesandbox.io/s/ps8-8-l2kruj)
 
 ![](./Images//practiceSet8/ex8.1.png)
 
@@ -219,6 +236,8 @@ Done Todos
 - Answer page
 
 The Home page shows a welcome message with the user's name. The Questions page will list all the questions with 3 buttons: upvote, downvote, and answers. On click of answers button, Answer page should display with that particular question and answer.
+
+[Solution ](https://codesandbox.io/s/ps8-9-ppe66x)
 
 ```jsx
 export const fakeFetch = (url) => {
